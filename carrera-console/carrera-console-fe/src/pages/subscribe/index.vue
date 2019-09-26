@@ -31,7 +31,7 @@
               </bc-button>
             </bc-button-group>
 
-            <bc-button type="gray" :disabled="hasNoChecked" @on-click="handleManageSubscribe('delete')">Delete
+            <bc-button type="gray" :disabled="hasNoChecked" @click="handleManageSubscribe('delete')">Delete
             </bc-button>
           </div>
 
@@ -205,6 +205,7 @@
         this.detailStatus = true;
         this.title = 'Subscription Detail';
         subscribe.msgPushTypeDesc = this.getNameById(subscribe.msgPushType, this.msgPushTypes);
+        
         this.subscribeData = subscribe;
       },
 
